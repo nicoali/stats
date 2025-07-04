@@ -66,9 +66,9 @@ function erf($x) {
 }
 // Connessione al database
 $host = 'localhost';
-$db = 'calcio'; 
-$user = 'root'; 
-$pass = 'sticazzi';   
+$db = ''; 
+$user = ''; 
+$pass = '';   
 $conn = new mysqli($host, $user, $pass, $db);
 
 // Verifica la connessione
