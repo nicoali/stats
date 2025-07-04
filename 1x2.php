@@ -24,7 +24,7 @@ if (!isset($_SESSION['id'])) {
         }
     }
 }
-$mysqli = new mysqli("localhost", "root", "sticazzi", "calcio");
+$mysqli = new mysqli("localhost", "", "", "calcio");
 
 // Controlla connessione
 if ($mysqli->connect_error) {
@@ -395,8 +395,8 @@ function changeSoglia() {
 // Connessione al database
 $host = 'localhost';
 $db = 'calcio'; 
-$user = 'root'; 
-$pass = 'sticazzi';   
+$user = ''; 
+$pass = '';   
 $conn = new mysqli($host, $user, $pass, $db);
 // Verifica la connessione
 if ($conn->connect_error) {
